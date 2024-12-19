@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Seat Reservation</string>
+    <string name="back_button">Go back to the previous screen</string>
+    <string name="logo_admin">Logo Admin</string>
+    <string name="logout_button">Logout from the app</string>
+    <string name="seat_details_will_appear_here">Seat details will appear here</string>
+    <string name="seat_reservation">Seat Reservation</string>
+    <string name="this_is_a_secret_button_to_login_as_admin">This is a secret button to login as admin</string>
+</resources>

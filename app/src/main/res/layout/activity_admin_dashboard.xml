@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AdminDashboard">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="225dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="10sp"
+            android:text="Admin\nDASHBOARD"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/back_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/left_arrow"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="314dp"
+        android:layout_height="505dp"
+        android:layout_marginBottom="76dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <Button
+            android:id="@+id/add_event_button"
+            android:layout_width="match_parent"
+            android:layout_height="247dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#0000C853"
+            android:fontFamily="sans-serif"
+            android:text="Manage Events"
+            android:textColor="#2962FF"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="2dp"
+            app:strokeColor="#2962FF"
+            app:strokeWidth="8dp" />
+
+        <Button
+            android:id="@+id/edit_reservations_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#00FFFFFF"
+            android:fontFamily="sans-serif"
+            android:text="Edit Reservations"
+            android:textColor="#304FFE"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="2dp"
+            app:strokeColor="#2962FF"
+            app:strokeWidth="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="101dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="98dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="272dp"
+            android:backgroundTint="#FB4444"
+            android:fontFamily="sans-serif"
+            android:text="Logout"
+            app:iconTint="#EB0707" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

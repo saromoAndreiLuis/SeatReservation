@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rsbg"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/adlam_display"
+        android:gravity="center"
+        android:text="@string/seat_reservation"
+        android:textColor="#BDBB25"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_admin_imgBtn" />
+
+    <TextView
+        android:id="@+id/seatDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:background="#00F0F0F0"
+        android:maxWidth="264dp"
+        android:maxHeight="174dp"
+        android:padding="16dp"
+        android:text="@string/seat_details_will_appear_here"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/logo_admin_imgBtn"
+        android:layout_width="120dp"
+        android:layout_height="124dp"
+        android:background="@drawable/logo"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/this_is_a_secret_button_to_login_as_admin"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageButton
+        android:id="@+id/logout_button"
+        android:layout_width="61dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/logout_button"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logout" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/back_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/left_arrow"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/logout_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/seatDetailsTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
